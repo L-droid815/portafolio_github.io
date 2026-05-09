@@ -10,24 +10,52 @@
 
 body{
     font-family: 'Inter', sans-serif;
+    background-color: rgb(63, 63, 197);
 }
 
 /* Alineación base */
 .menu-container{
     padding: 20px 50px;
-    background-color: aqua;
+    background-color: #003153;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.logo{
+.link-del-logo{
     font-weight: bold;
-    color: #ffffff;
     font-size: 1.5rem;
 }
 
 nav ul{
     display: flex;
     gap: 20px;
+}
+
+a{
+    color: #ffffff;
+}
+
+.encabezado-1{
+    text-align: center;
+    color: #ffffff;
+}
+
+.foto-de-perfil {
+    width: 300px; /* Definimos el ancho del contenedor */
+    
+    /* ESTA ES LA CLAVE PARA CENTRARLO HORIZONTALMENTE */
+    margin: 0 auto; /* Arriba/Abajo 0, Izquierda/Derecha automático */
+    
+    /* Estos estilos que tenías están bien aquí para que se apliquen al borde */
+    border: 6px solid #ffffff;
+    border-radius: 10px;
+    overflow: hidden; /* Opcional: asegura que la imagen no se salga si hay bordes redondeados */
+}
+
+/* 2. Estilos para la imagen dentro del contenedor */
+.foto-de-perfil img {
+    display: block; /* Convertimos la imagen en bloque para que ocupe todo el ancho de su padre */
+    width: 100%;    /* La imagen se ajusta al ancho del contenedor (.yo) */
+    height: auto;   /* Mantiene la proporción de la imagen */
 }
